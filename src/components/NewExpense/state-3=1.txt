@@ -1,0 +1,63 @@
+Projelerde normalde teker teker verilir state ama eğer bunlar birbiri ile ilgili ise bunu tek state de verebilirsin.
+Functinları da ona göre entegre edilebilir.
+
+const [enteredTitle, setEnteredTitle] = useState('');
+    const [enteredAmount, setEnteredAmount] = useState('');
+    const [enteredDate, setEnteredDate] = useState('');
+
+    const titleChangeHandler = (event) => {
+        setEnteredTitle(event.target.value);
+    };
+    const amountChangeHandler = (event) => {
+        setEnteredAmount(event.target.value);
+    };
+    const dateChangeHandler = (event) => {
+        setEnteredDate(event.target.value);
+    };
+
+############ 3 state birlşetirme tek state de #################
+####
+ Durum güncellemesi birden fazla State de yapılacaksa 2 yöntemimiz var. 
+ 1. yöntem çalışır.
+ 2. yöntem de çalışır. Bu yöntemde react durum güncellemesini garanti eder.
+####
+    const [userInput, setUserInput] = useState({
+        enteredTitle = '',
+        enteredAmount = '',
+        enteredDate = '',
+    });
+
+    const titleChangeHandler = (event) => {
+        //1. yöntem
+        setUserInput({
+        ...userInput,
+        enteredTitle: event.target.value,
+        });
+        //2. yöntem
+        setUserInput((prevState) => {
+            return {...prevState, enteredTitle: event.target.value}
+        });
+    };
+    const amountChangeHandler = (event) => {
+        //1. yöntem
+        setUserInput({
+        ...userInput,
+        enteredAmount: event.target.value,
+        });
+        //2. yöntem
+        setUserInput((prevState) => {
+            return {...prevState, enteredAmount: event.target.value}
+        });
+
+    };
+    const dateChangeHandler = (event) => {
+        //1. yöntem
+        setUserInput({
+        ...userInput,
+        enteredDate: event.target.value,
+        });
+        //2. yöntem
+        setUserInput((prevState) => {
+            return {...prevState, enteredDate: event.target.value}
+        });
+    };
