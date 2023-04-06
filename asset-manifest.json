@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/React-Form-Data-Modification-Categorization/static/css/main.5cf07088.css",
+    "main.js": "/React-Form-Data-Modification-Categorization/static/js/main.03a4a88e.js",
+    "static/js/787.b991c09c.chunk.js": "/React-Form-Data-Modification-Categorization/static/js/787.b991c09c.chunk.js",
+    "index.html": "/React-Form-Data-Modification-Categorization/index.html",
+    "main.5cf07088.css.map": "/React-Form-Data-Modification-Categorization/static/css/main.5cf07088.css.map",
+    "main.03a4a88e.js.map": "/React-Form-Data-Modification-Categorization/static/js/main.03a4a88e.js.map",
+    "787.b991c09c.chunk.js.map": "/React-Form-Data-Modification-Categorization/static/js/787.b991c09c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5cf07088.css",
+    "static/js/main.03a4a88e.js"
+  ]
+}
