@@ -24,3 +24,22 @@
   .new-expense__actions {
     text-align: right;
   }
+
+.expense-form-paper {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .expense-form-paper {
+    padding: 1rem;
+  }
+}

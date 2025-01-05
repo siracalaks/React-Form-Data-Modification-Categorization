@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './ChartBar.css';
 
 const ChartBar = (props) => {
@@ -19,5 +20,11 @@ if (props.maxValue > 0) {
     </div>
   )
 }
+
+ChartBar.propTypes = {
+  value: PropTypes.number.isRequired,
+  maxValue: PropTypes.number.isRequired,
+  label: PropTypes.string.isRequired
+};
 
 export default ChartBar

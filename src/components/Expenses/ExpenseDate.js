@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './ExpenseDate.css';
 
@@ -14,6 +15,10 @@ const ExpenseDate = (props) => {
       <div className='expense-date__day'>{day}</div>
     </div>
   );
+};
+
+ExpenseDate.propTypes = {
+  date: PropTypes.instanceOf(Date).isRequired
 };
 
 export default ExpenseDate;
