@@ -11,12 +11,8 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "crypto-js": "^4.2.0",
-    "cypress": "^13.17.0",
     "date-fns": "^4.1.0",
-    "firebase": "^11.1.0",
     "formik": "^2.4.6",
-    "framer-motion": "^11.15.0",
     "jspdf": "^2.5.2",
     "jspdf-autotable": "^3.8.4",
     "prop-types": "^15.8.1",
@@ -24,11 +20,12 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "react-toastify": "^11.0.2",
-    "recharts": "^2.15.0",
-    "web-vitals": "^2.1.4",
-    "workbox-webpack-plugin": "^7.3.0",
     "xlsx": "^0.18.5",
     "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "eslint-plugin-cypress": "^2.15.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,6 +37,9 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "plugins": [
+      "cypress"
     ]
   },
   "browserslist": {
@@ -53,8 +53,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^5.0.0"
   }
 }
